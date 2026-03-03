@@ -35,6 +35,5 @@ site/
 */__pycache__/
 *.pyc
 
-
-
-
+#Personal File
+CSP*
