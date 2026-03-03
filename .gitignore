@@ -1,0 +1,36 @@
+# --- PHP / Laravel ---
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+.phpactor.json
+.phpunit.result.cache
+/.phpunit.cache
+/auth.json
+Homestead.json
+Homestead.yaml
+.env
+.env.*
+*!.gitignore
+
+# --- System / Editors ---
+.DS_Store
+Thumbs.db
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# --- MkDocs ---
+site/
+*/__pycache__/
+*.pyc
