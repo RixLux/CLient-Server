@@ -38,6 +38,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Tugas1: Tugas1.md
+  - Tugas2: Tugas2.md
 
 markdown_extensions:
   - admonition
