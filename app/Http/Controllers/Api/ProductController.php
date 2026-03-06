@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Http\Requests\StoreProductRequest;
 
 class ProductController extends Controller
 {
@@ -13,27 +14,54 @@ class ProductController extends Controller
         return Product::all();
     }
 
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        $product = Product::create($request->all());
-        return response()->json($product, 201);
+        $product = Product::create($request->validated());
+
+        return response()->json([
+            'message' => 'Produk berhasil dibuat!',
+            'data'    => $product
+        ], 201);
     }
 
-    public function show($id)
+    public function show(Product $product)
     {
-        return Product::findOrFail($id);
+        return $product;
     }
 
-    public function update(Request $request, $id)
+    public function update(StoreProductRequest $request, Product $product)
     {
-        $product = Product::findOrFail($id);
-        $product->update($request->all());
-        return response()->json($product);
+        $product->update($request->validated());
+
+        return response()->json([
+            'message' => 'Produk berhasil diupdate!',
+            'data'    => $product
+        ], 200);
     }
 
-    public function destroy($id)
+    public function destroy(Product $product)
     {
-        Product::destroy($id);
-        return response()->json(['message' => 'Deleted successfully']);
+        $product->delete();
+
+        return response()->json([
+            'message' => 'Produk berhasil dihapus!'
+        ], 200);
     }
+
+    public function search($name)
+{
+    $products = Product::where('name', 'like', '%' . $name . '%')->get();
+
+    if ($products->isEmpty()) {
+        return response()->json([
+            'message' => 'Produk dengan nama "' . $name . '" tidak ditemukan.'
+        ], 404);
+    }
+
+    return response()->json([
+        'message' => 'Ditemukan ' . $products->count() . ' produk.',
+        'data' => $products
+    ], 200);
+}
+
 }

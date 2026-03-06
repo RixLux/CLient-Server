@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ServerController;
-use App\Http\Controllers\Api\ProductController; // Tambahkan ini!
+use App\Http\Controllers\Api\ProductController;
 
 /*
 
@@ -50,4 +50,5 @@ Route::get('/ping', [ServerController::class, 'ping']);
 Route::get('/info', [ServerController::class, 'info']);
 Route::get('/profile', [ServerController::class, 'profile']);
 Route::get('/status', [ServerController::class, 'status']);
+Route::get('products/search/{name}', [ProductController::class, 'search']);
 Route::apiResource('products', ProductController::class);
