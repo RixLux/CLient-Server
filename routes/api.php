@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ServerController;
 
 /*
 
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/ping', function () {
     return response()->json([
         'status' => 'success',
@@ -24,7 +25,8 @@ Route::get('/ping', function () {
         'time' => now()
     ]);
 });
-
+*/
+/*
 Route::get('/profile', function () {
     return response()->json([
         'Nama' => 'Afif Irham Nobel',
@@ -33,6 +35,8 @@ Route::get('/profile', function () {
     ]);
 });
 
+*/
+/*
 Route::get('/info', function () {
     return response()->json([
         'app' => 'Client Server API ',
@@ -40,3 +44,8 @@ Route::get('/info', function () {
         'developer' => 'Mahasiswwa Informatika'
     ]);
 });
+*/
+Route::get('/ping', [ServerController::class, 'ping']);
+Route::get('/info', [ServerController::class, 'info']);
+Route::get('/profile', [ServerController::class, 'profile']);
+Route::get('/status', [ServerController::class, 'status']);
