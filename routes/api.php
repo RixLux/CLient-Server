@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ServerController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\CategoryController;
 
 /*
 
@@ -50,5 +51,10 @@ Route::get('/ping', [ServerController::class, 'ping']);
 Route::get('/info', [ServerController::class, 'info']);
 Route::get('/profile', [ServerController::class, 'profile']);
 Route::get('/status', [ServerController::class, 'status']);
+
+//Product
 Route::get('products/search/{name}', [ProductController::class, 'search']);
 Route::apiResource('products', ProductController::class);
+
+//Categories
+Route::apiResource('categories', CategoryController::class);
