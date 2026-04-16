@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://rixlux.github.io/CLient-Server/Tugas1/">
+        <link rel="canonical" href="https://rixlux.github.io/CLient-Server/Tugas2/">
       
       
-        <link rel="prev" href="../about/">
+        <link rel="prev" href="../Tugas1/">
       
       
-        <link rel="next" href="../Tugas2/">
+        <link rel="next" href="../Tugas3/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Tugas1 - CLient-Server Documentation</title>
+        <title>Tugas2 - CLient-Server Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#laporan-praktikum-dasar-routing-dan-konsep-client-server-laravel" class="md-skip">
+        <a href="#laporan-praktikum-2" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tugas1
+              Tugas2
             
           </span>
         </div>
@@ -268,11 +268,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../Tugas1/" class="md-tabs__link">
         
   
   
@@ -289,9 +287,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../Tugas2/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -464,6 +464,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -483,7 +510,7 @@
   <span class="md-ellipsis">
     
   
-    Tugas1
+    Tugas2
   
 
     
@@ -501,7 +528,7 @@
   <span class="md-ellipsis">
     
   
-    Tugas1
+    Tugas2
   
 
     
@@ -527,44 +554,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-dasar-teori" class="md-nav__link">
+  <a href="#1-kenapa-controller-lebih-baik-daripada-closure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A. Dasar Teori
+        1. Kenapa Controller lebih baik daripada Closure?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="A. Dasar Teori">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apa-keuntungan-pemisahan-routing-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Apa Keuntungan Pemisahan Routing &amp; Logic?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Apa Keuntungan Pemisahan Routing &amp; Logic?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-fungsi-routing-laravel" class="md-nav__link">
+  <a href="#contoh-perbandingan" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Fungsi Routing Laravel
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-konsep-request-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Konsep Request-Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-error-umum-saat-server-tidak-berjalan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Error Umum Saat Server Tidak Berjalan
+        Contoh Perbandingan:
       
     </span>
   </a>
@@ -577,15 +593,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#b-tugas-laporan" class="md-nav__link">
+  <a href="#3-bagaimana-jika-project-makin-besar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        B. Tugas Laporan
+        3. Bagaimana jika Project Makin Besar?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="B. Tugas Laporan">
+    <nav class="md-nav" aria-label="3. Bagaimana jika Project Makin Besar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-struktur-project-besar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contoh Struktur Project Besar:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas-laporan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tugas Laporan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tugas Laporan">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -610,17 +654,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3-penjelasan-singkat-alur-client-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Penjelasan Singkat Alur Client-Server
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -630,33 +663,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Tugas2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tugas2
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -769,44 +775,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-dasar-teori" class="md-nav__link">
+  <a href="#1-kenapa-controller-lebih-baik-daripada-closure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A. Dasar Teori
+        1. Kenapa Controller lebih baik daripada Closure?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="A. Dasar Teori">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apa-keuntungan-pemisahan-routing-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Apa Keuntungan Pemisahan Routing &amp; Logic?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Apa Keuntungan Pemisahan Routing &amp; Logic?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-fungsi-routing-laravel" class="md-nav__link">
+  <a href="#contoh-perbandingan" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Fungsi Routing Laravel
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-konsep-request-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Konsep Request-Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-error-umum-saat-server-tidak-berjalan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Error Umum Saat Server Tidak Berjalan
+        Contoh Perbandingan:
       
     </span>
   </a>
@@ -819,15 +814,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#b-tugas-laporan" class="md-nav__link">
+  <a href="#3-bagaimana-jika-project-makin-besar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        B. Tugas Laporan
+        3. Bagaimana jika Project Makin Besar?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="B. Tugas Laporan">
+    <nav class="md-nav" aria-label="3. Bagaimana jika Project Makin Besar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-struktur-project-besar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contoh Struktur Project Besar:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas-laporan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tugas Laporan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tugas Laporan">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -846,17 +869,6 @@
     <span class="md-ellipsis">
       
         2. Screenshot Hasil Endpoint
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-penjelasan-singkat-alur-client-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Penjelasan Singkat Alur Client-Server
       
     </span>
   </a>
@@ -888,52 +900,108 @@
   
 
 
-<h1 id="laporan-praktikum-dasar-routing-dan-konsep-client-server-laravel">Laporan Praktikum: Dasar Routing dan Konsep Client-Server Laravel</h1>
-<h2 id="a-dasar-teori">A. Dasar Teori</h2>
-<h3 id="1-fungsi-routing-laravel">1. Fungsi Routing Laravel</h3>
-<p>Routing dalam Laravel bertindak sebagai <strong>"Petugas Navigasi"</strong>. Fungsinya adalah menerima <em>request</em> dari URL yang diketikkan pengguna di browser, lalu meneruskannya ke bagian kode yang sesuai (biasanya Controller atau Anonymous Function).</p>
+<h1 id="laporan-praktikum-2">Laporan Praktikum 2</h1>
+<h2 id="1-kenapa-controller-lebih-baik-daripada-closure">1. Kenapa Controller lebih baik daripada Closure?</h2>
+<p>Secara teknis, <strong>Closure</strong> (fungsi anonim langsung di file route) memang bekerja, tapi <strong>Controller</strong> menang dalam hal manajemen kode.</p>
 <ul>
-<li><strong>Lokasi File:</strong> Umumnya berada di <code>routes/web.php</code> untuk aplikasi web.</li>
-<li><strong>Keunggulan:</strong> Memungkinkan pembuatan URL yang bersih (Clean URL) dan mendukung berbagai metode HTTP seperti <code>GET</code>, <code>POST</code>, <code>PUT</code>, dan <code>DELETE</code>.</li>
-</ul>
-<h3 id="2-konsep-request-response">2. Konsep Request-Response</h3>
-<p>Ini adalah siklus dasar komunikasi di internet:</p>
-<ul>
-<li><strong>Request:</strong> Pesan yang dikirimkan oleh <strong>Client</strong> (Browser) ke server. Berisi data seperti URL, metode HTTP, <em>header</em>, dan terkadang data form.</li>
-<li><strong>Response:</strong> Pesan balasan dari <strong>Server</strong> kembali ke client. Berisi status code (seperti 200 OK atau 404 Not Found) dan konten (HTML, JSON, atau file).</li>
-</ul>
-<h3 id="3-error-umum-saat-server-tidak-berjalan">3. Error Umum Saat Server Tidak Berjalan</h3>
-<p>Jika kamu mencoba mengakses aplikasi Laravel namun server (<code>php artisan serve</code>) belum diaktifkan, kamu akan menemui beberapa kendala:</p>
-<ul>
-<li><strong>"This site can’t be reached" (ERR_CONNECTION_REFUSED):</strong> Browser tidak menemukan layanan yang mendengarkan (listening) di port tersebut (biasanya 8000).</li>
-<li><strong>Connection Timed Out:</strong> Terjadi jika server sangat lambat merespons atau ada firewall yang memblokir, namun dalam konteks lokal biasanya karena server memang mati.</li>
+<li><strong>Caching Route:</strong> Laravel memiliki fitur <code>route:cache</code> yang mempercepat performa aplikasi secara signifikan. Sayangnya, Laravel <strong>tidak bisa melakukan cache</strong> pada rute yang menggunakan Closure.</li>
+<li><strong>Kerapihan (Clean Code):</strong> Closure membuat file rute (seperti <code>web.php</code>) menjadi sangat panjang dan sulit dibaca jika logika aplikasi sudah kompleks.</li>
+<li><strong>Dependency Injection:</strong> Meskipun Closure mendukungnya, Controller jauh lebih bersih dalam menangani <em>constructor injection</em> untuk memanggil berbagai Service atau Repository.</li>
 </ul>
 <hr />
-<h2 id="b-tugas-laporan">B. Tugas Laporan</h2>
+<h2 id="2-apa-keuntungan-pemisahan-routing-logic">2. Apa Keuntungan Pemisahan Routing &amp; Logic?</h2>
+<p>Bayangkan file routing sebagai <strong>peta jalan</strong> dan Controller sebagai <strong>tujuannya</strong>. Jika peta jalan dicampur dengan bangunan tujuannya, peta tersebut akan sulit dibaca.</p>
+<h3 id="contoh-perbandingan">Contoh Perbandingan:</h3>
+<p><strong>Menggunakan Closure (Buruk untuk skala besar):</strong></p>
+<div class="highlight"><pre><span></span><code><span class="x">// routes/web.php</span>
+<span class="x">Route::get(&#39;/user/{id}&#39;, function ($id) {</span>
+<span class="x">    $user = User::findOrFail($id);</span>
+<span class="x">    // Logika bisnis yang panjang...</span>
+<span class="x">    return view(&#39;user.profile&#39;, [&#39;user&#39; =&gt; $user]);</span>
+<span class="x">});</span>
+</code></pre></div>
+<p><strong>Menggunakan Controller (Lebih Rapi):</strong></p>
+<div class="highlight"><pre><span></span><code><span class="x">// routes/web.php</span>
+<span class="x">use App\Http\Controllers\UserController;</span>
+
+<span class="x">Route::get(&#39;/user/{id}&#39;, [UserController::class, &#39;show&#39;]);</span>
+
+<span class="x">// app/Http/Controllers/UserController.php</span>
+<span class="x">public function show($id) {</span>
+<span class="x">    $user = User::findOrFail($id);</span>
+<span class="x">    return view(&#39;user.profile&#39;, compact(&#39;user&#39;));</span>
+<span class="x">}</span>
+</code></pre></div>
+<p><strong>Keuntungan Utama:</strong></p>
+<ol>
+<li><strong>Reusability:</strong> Logika di Controller bisa dipanggil oleh rute lain (misal: rute web dan rute API).</li>
+<li><strong>Organisasi:</strong> Kamu tahu persis di mana harus mencari kode jika ingin mengubah fitur tertentu.</li>
+<li><strong>Kolaborasi:</strong> Developer A bisa fokus merapikan rute, sementara Developer B fokus memperbaiki logika di Controller.</li>
+</ol>
+<hr />
+<h2 id="3-bagaimana-jika-project-makin-besar">3. Bagaimana jika Project Makin Besar?</h2>
+<p>Saat project tumbuh menjadi ribuan baris kode, Controller biasa pun bisa menjadi "gemuk" (<em>Fat Controller</em>). Di sinilah pola arsitektur lanjutan berperan:</p>
+<table>
+<thead>
+<tr>
+<th>Strategi</th>
+<th>Penjelasan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Single Action Controller</strong></td>
+<td>Menggunakan satu Controller hanya untuk satu tugas (menggunakan method <code>__invoke</code>).</td>
+</tr>
+<tr>
+<td><strong>Service Pattern</strong></td>
+<td>Memindahkan logika bisnis dari Controller ke class <strong>Service</strong> terpisah.</td>
+</tr>
+<tr>
+<td><strong>Request Validation</strong></td>
+<td>Menggunakan <code>FormRequest</code> agar Controller tidak penuh dengan aturan validasi <code>if-else</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contoh-struktur-project-besar">Contoh Struktur Project Besar:</h3>
+<p>Jika project sudah sangat besar, Controller kamu seharusnya hanya "menerima tamu" dan "memberikan jawaban", bukan "memasak di dapur".</p>
+<div class="highlight"><pre><span></span><code><span class="x">// app/Http/Controllers/OrderController.php</span>
+<span class="x">public function store(OrderRequest $request, OrderService $orderService) </span>
+<span class="x">{</span>
+<span class="x">    // Validasi otomatis dilakukan oleh OrderRequest</span>
+
+<span class="x">    // Logika bisnis dilakukan oleh Service</span>
+<span class="x">    $order = $orderService-&gt;createOrder($request-&gt;validated());</span>
+
+<span class="x">    return response()-&gt;json($order, 201);</span>
+<span class="x">}</span>
+</code></pre></div>
+<h2 id="tugas-laporan">Tugas Laporan</h2>
 <h3 id="1-screenshot-server-aktif">1. Screenshot Server Aktif</h3>
 <blockquote>
-<p><img alt="Server Aktif" src="../Images/Server_Aktif.png" />
+<p><img alt="Server Aktif" src="../Images/Tugas2/server-aktif.png" />
 <em>Keterangan: Menunjukkan pesan "Server running on [<a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a>]"</em></p>
 </blockquote>
 <h3 id="2-screenshot-hasil-endpoint">2. Screenshot Hasil Endpoint</h3>
-<p><strong>Info</strong><br />
-<img alt="api/info" src="../Images/api_%E2%81%84_info.png" />  </p>
+<p><strong>Info</strong>  </p>
+<blockquote>
+<p><img alt="api/info" src="../Images/Tugas2/info.png" /></p>
+</blockquote>
 <hr />
-<p><strong>ping</strong>
-<img alt="api/info" src="../Images/api_%E2%81%84_ping.png" />  </p>
+<p><strong>ping</strong></p>
+<blockquote>
+<p><img alt="api/info" src="../Images/Tugas2/ping.png" /></p>
+</blockquote>
 <hr />
-<p><strong>profile</strong>
-<img alt="api/info" src="../Images/api_%E2%81%84_profile.png" /></p>
-<h3 id="3-penjelasan-singkat-alur-client-server">3. Penjelasan Singkat Alur Client-Server</h3>
-<p>Berdasarkan praktikum yang dilakukan, alurnya adalah sebagai berikut:</p>
-<ol>
-<li><strong>User/Client</strong> mengetikkan alamat URL di browser.</li>
-<li><strong>Request</strong> dikirim melalui jaringan menuju server lokal (localhost).</li>
-<li><strong>Laravel Router</strong> menerima request tersebut dan mencocokkan URL-nya.</li>
-<li><strong>Logic/Controller</strong> memproses data (jika ada) dan menyiapkan balasan.</li>
-<li><strong>Server</strong> mengirimkan <strong>Response</strong> balik ke browser.</li>
-<li><strong>Browser</strong> merender kode tersebut menjadi tampilan yang kita lihat.</li>
-</ol>
+<p><strong>profile</strong></p>
+<blockquote>
+<p><img alt="api/info" src="../Images/Tugas2/profile.png" /></p>
+</blockquote>
+<hr />
+<p><strong>status</strong></p>
+<blockquote>
+<p><img alt="api/info" src="../Images/Tugas2/status.png" /></p>
+</blockquote>
 
 
 

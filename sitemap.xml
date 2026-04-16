@@ -2,14 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://rixlux.github.io/CLient-Server/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-04-16</lastmod>
     </url>
     <url>
          <loc>https://rixlux.github.io/CLient-Server/Tugas1/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://rixlux.github.io/CLient-Server/Tugas2/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://rixlux.github.io/CLient-Server/Tugas3/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://rixlux.github.io/CLient-Server/Tugas4/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://rixlux.github.io/CLient-Server/Tugas5/</loc>
+         <lastmod>2026-04-16</lastmod>
     </url>
     <url>
          <loc>https://rixlux.github.io/CLient-Server/about/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-04-16</lastmod>
     </url>
 </urlset>
