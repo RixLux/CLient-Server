@@ -1,11 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ServerController;
-use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CategoryController;
-
+use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\ServerController;
 /*
 
 |--------------------------------------------------------------------------
@@ -47,14 +45,22 @@ Route::get('/info', function () {
     ]);
 });
 */
-Route::get('/ping', [ServerController::class, 'ping']);
-Route::get('/info', [ServerController::class, 'info']);
-Route::get('/profile', [ServerController::class, 'profile']);
-Route::get('/status', [ServerController::class, 'status']);
+// Auth
+use Illuminate\Support\Facades\Route;
 
-//Product
-Route::get('products/search/{name}', [ProductController::class, 'search']);
-Route::apiResource('products', ProductController::class);
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
 
-//Categories
-Route::apiResource('categories', CategoryController::class);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/ping', [ServerController::class, 'ping']);
+    Route::get('/info', [ServerController::class, 'info']);
+    Route::get('/profile', [ServerController::class, 'profile']);
+    Route::get('/status', [ServerController::class, 'status']);
+
+    // Product
+    Route::get('products/search/{name}', [ProductController::class, 'search']);
+    Route::apiResource('products', ProductController::class);
+
+    // Categories
+    Route::apiResource('categories', CategoryController::class);
+});

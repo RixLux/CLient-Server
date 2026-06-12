@@ -34,15 +34,6 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-nav:
-  - Home: index.md
-  - About: about.md
-  - Tugas1: Tugas1.md
-  - Tugas2: Tugas2.md
-  - Tugas3: Tugas3.md
-  - Tugas4: Tugas4.md
-  - Tugas5: Tugas5.md
-
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -54,6 +45,19 @@ markdown_extensions:
 
 plugins:
   - search
+  - swagger-ui-tag
+  # - render_swagger
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Tugas1: Tugas1.md
+  - Tugas2: Tugas2.md
+  - Tugas3: Tugas3.md
+  - Tugas4: Tugas4.md
+  - Tugas5: Tugas5.md
+  - Tugas6: Tugas6.md
+  - Tugas7: Tugas7.md
+  - About: about.md

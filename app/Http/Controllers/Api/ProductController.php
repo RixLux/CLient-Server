@@ -7,14 +7,28 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use Dedoc\Scramble\Attributes\QueryParameter;
+
 
 class ProductController extends Controller
 {
-    public function index()
-    {
-        $products = Product::with('category')->get();
+    #[QueryParameter('search', description: 'Cari produk berdasarkan nama', example: 'mouse')]
+    #[QueryParameter('category_id', description: 'Filter berdasarkan ID kategori', example: '1')]
+    #[QueryParameter('page', description: 'Filter berdasarkan halaman', example: '1')]
 
-        return response()->json($products);
+    public function index(Request $request)
+    {
+        $query = Product::with('category');
+
+        if ($request->search) {
+            $query->where('name', 'like', '%' . $request->search . '%');
+        }
+
+        if ($request->category_id) {
+            $query->where('category_id', $request->category_id);
+        }
+
+        return response()->json($query->paginate(5));
     }
 
     public function store(StoreProductRequest $request)
