@@ -1,0 +1,1747 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation">
+      
+      
+      
+        <link rel="canonical" href="https://rixlux.github.io/CLient-Server/Tugas6/">
+      
+      
+        <link rel="prev" href="../Tugas5/">
+      
+      
+        <link rel="next" href="../Tugas7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Tugas6 - CLient-Server Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-praktikum-pertemuan-6" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CLient-Server Documentation" class="md-header__button md-logo" aria-label="CLient-Server Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CLient-Server Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tugas6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RixLux/CLient-Server" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RixLux/CLient-Server
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas5
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas6
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tugas7/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tugas7
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CLient-Server Documentation" class="md-nav__button md-logo" aria-label="CLient-Server Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CLient-Server Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RixLux/CLient-Server" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RixLux/CLient-Server
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-filtering-searching-dan-pagination-pada-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementasi Filtering, Searching, dan Pagination pada REST API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tujuan-pembelajaran" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tujuan Pembelajaran
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langkah-kerja-praktikum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Langkah Kerja Praktikum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Langkah Kerja Praktikum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-buka-file-berikut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Buka File Berikut
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-membuat-endpoint-filtering-dan-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Membuat Endpoint Filtering dan Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-menguji-search-produk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Menguji Search Produk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-menguji-filter-berdasarkan-kategori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Menguji Filter Berdasarkan Kategori
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-menambahkan-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. Menambahkan Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-menguji-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. Menguji Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diskusi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diskusi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-mengapa-pagination-penting-dalam-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Mengapa Pagination Penting dalam REST API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Mengapa Pagination Penting dalam REST API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keuntungan-utama-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keuntungan Utama Pagination:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apa-keuntungan-menggunakan-query-parameter-pada-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Apa Keuntungan Menggunakan Query Parameter pada API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Apa Keuntungan Menggunakan Query Parameter pada API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keuntungan-menggunakannya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keuntungan Menggunakannya:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apa-perbedaan-search-dan-filtering-pada-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Apa Perbedaan Search dan Filtering pada API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Apa Perbedaan Search dan Filtering pada API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-di-aplikasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contoh Kasus di Aplikasi:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kesimpulan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kesimpulan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tugas7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tugas7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-filtering-searching-dan-pagination-pada-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementasi Filtering, Searching, dan Pagination pada REST API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tujuan-pembelajaran" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tujuan Pembelajaran
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langkah-kerja-praktikum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Langkah Kerja Praktikum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Langkah Kerja Praktikum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-buka-file-berikut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Buka File Berikut
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-membuat-endpoint-filtering-dan-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Membuat Endpoint Filtering dan Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-menguji-search-produk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Menguji Search Produk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-menguji-filter-berdasarkan-kategori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Menguji Filter Berdasarkan Kategori
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-menambahkan-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. Menambahkan Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-menguji-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. Menguji Pagination
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latihan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diskusi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diskusi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-mengapa-pagination-penting-dalam-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Mengapa Pagination Penting dalam REST API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Mengapa Pagination Penting dalam REST API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keuntungan-utama-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keuntungan Utama Pagination:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apa-keuntungan-menggunakan-query-parameter-pada-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Apa Keuntungan Menggunakan Query Parameter pada API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Apa Keuntungan Menggunakan Query Parameter pada API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keuntungan-menggunakannya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keuntungan Menggunakannya:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apa-perbedaan-search-dan-filtering-pada-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Apa Perbedaan Search dan Filtering pada API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Apa Perbedaan Search dan Filtering pada API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-di-aplikasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contoh Kasus di Aplikasi:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kesimpulan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kesimpulan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="modul-praktikum-pertemuan-6"><strong>MODUL PRAKTIKUM PERTEMUAN 6</strong></h1>
+<h2 id="implementasi-filtering-searching-dan-pagination-pada-rest-api">Implementasi Filtering, Searching, dan Pagination pada REST API</h2>
+<h2 id="tujuan-pembelajaran"><strong>Tujuan Pembelajaran</strong></h2>
+<p>Setelah mengikuti praktikum ini mahasiswa mampu:</p>
+<ol>
+<li>Memahami konsep query parameter pada REST API.</li>
+<li>Mengimplementasikan pencarian data (search) pada API.</li>
+<li>Mengimplementasikan filter data berdasarkan kategori.</li>
+<li>Menggunakan pagination pada Laravel API.</li>
+<li>Mengoptimalkan endpoint API agar lebih fleksibel.</li>
+</ol>
+<hr />
+<h2 id="langkah-kerja-praktikum"><strong>Langkah Kerja Praktikum</strong></h2>
+<h3 id="a-buka-file-berikut">A. Buka File Berikut</h3>
+<p>Buka file berikut pada direktori project Anda:
+<div class="highlight"><pre><span></span><code>app/Http/Controllers/Api/ProductController.php
+</code></pre></div></p>
+<h3 id="b-membuat-endpoint-filtering-dan-search">B. Membuat Endpoint Filtering dan Search</h3>
+<p>Ubah method <code>index()</code> pada <code>ProductController.php</code> menjadi:
+<div class="highlight"><pre><span></span><code><span class="x">public function index(Request $request)</span>
+<span class="x">{</span>
+<span class="x">    $query = Product::with(&#39;category&#39;);</span>
+
+<span class="x">    if ($request-&gt;search) {</span>
+<span class="x">        $query-&gt;where(&#39;name&#39;, &#39;like&#39;, &#39;%&#39; . $request-&gt;search . &#39;%&#39;);</span>
+<span class="x">    }</span>
+
+<span class="x">    if ($request-&gt;category_id) {</span>
+<span class="x">        $query-&gt;where(&#39;category_id&#39;, $request-&gt;category_id);</span>
+<span class="x">    }</span>
+
+<span class="x">    return response()-&gt;json($query-&gt;get());</span>
+<span class="x">}</span>
+</code></pre></div>
+<em>Method ini memungkinkan API menerima parameter tambahan dari URL untuk pencarian dan pemfilteran.</em></p>
+<h3 id="c-menguji-search-produk">C. Menguji Search Produk</h3>
+<p>Buka Postman, gunakan method <strong>GET</strong>, dan akses URL berikut:
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:8000/api/products?search=mouse
+</code></pre></div>
+<em>Endpoint ini akan menampilkan produk yang memiliki kata "mouse" pada nama produknya.</em></p>
+<p>Screenshot:  </p>
+<hr />
+<p><img alt="Images/Tugas6/c-menguji_search_produk.png" src="../Images/Tugas6/c-menguji_search_produk.png" /></p>
+<p>Response:<br />
+<div class="highlight"><pre><span></span><code>{
+  &quot;current_page&quot;: 1,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Furniture Item 1&quot;,
+      &quot;price&quot;: 1070704,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    }
+  ],
+  &quot;first_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;from&quot;: 1,
+  &quot;last_page&quot;: 1,
+  &quot;last_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;links&quot;: [
+    {
+      &quot;url&quot;: null,
+      &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+      &quot;page&quot;: null,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+      &quot;label&quot;: &quot;1&quot;,
+      &quot;page&quot;: 1,
+      &quot;active&quot;: true
+    },
+    {
+      &quot;url&quot;: null,
+      &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+      &quot;page&quot;: null,
+      &quot;active&quot;: false
+    }
+  ],
+  &quot;next_page_url&quot;: null,
+  &quot;path&quot;: &quot;http://127.0.0.1:8080/api/products&quot;,
+  &quot;per_page&quot;: 5,
+  &quot;prev_page_url&quot;: null,
+  &quot;to&quot;: 1,
+  &quot;total&quot;: 1
+}
+</code></pre></div></p>
+<hr />
+<h3 id="d-menguji-filter-berdasarkan-kategori">D. Menguji Filter Berdasarkan Kategori</h3>
+<p>Gunakan method <strong>GET</strong> dengan URL:
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:8000/api/products?category_id=1
+</code></pre></div>
+<em>Endpoint ini akan menampilkan hanya produk yang berada pada kategori dengan ID 1.</em></p>
+<p>Screenshot:  </p>
+<hr />
+<p><img alt="Images/Tugas6/d-menguji_filter_berdasarkan_kategori.png" src="../Images/Tugas6/d-menguji_filter_berdasarkan_kategori.png" /></p>
+<hr />
+<p>Response:<br />
+<div class="highlight"><pre><span></span><code>{
+  &quot;current_page&quot;: 1,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Furniture Item 1&quot;,
+      &quot;price&quot;: 1070704,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Furniture Item 2&quot;,
+      &quot;price&quot;: 683436,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;Furniture Item 3&quot;,
+      &quot;price&quot;: 1704851,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;Furniture Item 4&quot;,
+      &quot;price&quot;: 1930969,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;name&quot;: &quot;Furniture Item 5&quot;,
+      &quot;price&quot;: 469451,
+      &quot;description&quot;: &quot;High quality furniture item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 1,
+      &quot;category&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Furniture&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    }
+  ],
+  &quot;first_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;from&quot;: 1,
+  &quot;last_page&quot;: 1,
+  &quot;last_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;links&quot;: [
+    {
+      &quot;url&quot;: null,
+      &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+      &quot;page&quot;: null,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+      &quot;label&quot;: &quot;1&quot;,
+      &quot;page&quot;: 1,
+      &quot;active&quot;: true
+    },
+    {
+      &quot;url&quot;: null,
+      &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+      &quot;page&quot;: null,
+      &quot;active&quot;: false
+    }
+  ],
+  &quot;next_page_url&quot;: null,
+  &quot;path&quot;: &quot;http://127.0.0.1:8080/api/products&quot;,
+  &quot;per_page&quot;: 5,
+  &quot;prev_page_url&quot;: null,
+  &quot;to&quot;: 5,
+  &quot;total&quot;: 5
+}
+</code></pre></div></p>
+<h3 id="e-menambahkan-pagination">E. Menambahkan Pagination</h3>
+<p>Ubah bagian <code>return</code> pada method <code>index()</code> menjadi:
+<div class="highlight"><pre><span></span><code><span class="x">return response()-&gt;json(</span>
+<span class="x">    $query-&gt;paginate(5)</span>
+<span class="x">);</span>
+</code></pre></div>
+<em>Dengan perubahan ini, API akan membatasi jumlah data yang ditampilkan menjadi 5 produk per halaman.</em></p>
+<h3 id="f-menguji-pagination">F. Menguji Pagination</h3>
+<p>Buka Postman, gunakan method <strong>GET</strong>, dan akses URL berikut:</p>
+<p><div class="highlight"><pre><span></span><code>http://127.0.0.1:8000/api/products?page=2
+</code></pre></div>
+<em>Response akan berisi data pagination seperti:</em></p>
+<ul>
+<li><code>current_page</code></li>
+<li><code>total</code></li>
+<li><code>last_page</code></li>
+<li><code>data</code></li>
+</ul>
+<p>Screenshot:  </p>
+<hr />
+<p><img alt="Images/Tugas6/e-menambahkan_pagination.png" src="../Images/Tugas6/e-menambahkan_pagination.png" /></p>
+<hr />
+<p>Response:<br />
+<div class="highlight"><pre><span></span><code>{
+  &quot;current_page&quot;: 2,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 6,
+      &quot;name&quot;: &quot;Stationery Item 1&quot;,
+      &quot;price&quot;: 203143,
+      &quot;description&quot;: &quot;High quality stationery item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 2,
+      &quot;category&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Stationery&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;name&quot;: &quot;Stationery Item 2&quot;,
+      &quot;price&quot;: 723870,
+      &quot;description&quot;: &quot;High quality stationery item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 2,
+      &quot;category&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Stationery&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;name&quot;: &quot;Stationery Item 3&quot;,
+      &quot;price&quot;: 1486192,
+      &quot;description&quot;: &quot;High quality stationery item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 2,
+      &quot;category&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Stationery&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;name&quot;: &quot;Stationery Item 4&quot;,
+      &quot;price&quot;: 949314,
+      &quot;description&quot;: &quot;High quality stationery item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 2,
+      &quot;category&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Stationery&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;Stationery Item 5&quot;,
+      &quot;price&quot;: 92470,
+      &quot;description&quot;: &quot;High quality stationery item for your office needs.&quot;,
+      &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+      &quot;category_id&quot;: 2,
+      &quot;category&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Stationery&quot;,
+        &quot;created_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2026-06-12T08:30:54.000000Z&quot;
+      }
+    }
+  ],
+  &quot;first_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;from&quot;: 6,
+  &quot;last_page&quot;: 5,
+  &quot;last_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=5&quot;,
+  &quot;links&quot;: [
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+      &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+      &quot;page&quot;: 1,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+      &quot;label&quot;: &quot;1&quot;,
+      &quot;page&quot;: 1,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=2&quot;,
+      &quot;label&quot;: &quot;2&quot;,
+      &quot;page&quot;: 2,
+      &quot;active&quot;: true
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=3&quot;,
+      &quot;label&quot;: &quot;3&quot;,
+      &quot;page&quot;: 3,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=4&quot;,
+      &quot;label&quot;: &quot;4&quot;,
+      &quot;page&quot;: 4,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=5&quot;,
+      &quot;label&quot;: &quot;5&quot;,
+      &quot;page&quot;: 5,
+      &quot;active&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;http://127.0.0.1:8080/api/products?page=3&quot;,
+      &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+      &quot;page&quot;: 3,
+      &quot;active&quot;: false
+    }
+  ],
+  &quot;next_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=3&quot;,
+  &quot;path&quot;: &quot;http://127.0.0.1:8080/api/products&quot;,
+  &quot;per_page&quot;: 5,
+  &quot;prev_page_url&quot;: &quot;http://127.0.0.1:8080/api/products?page=1&quot;,
+  &quot;to&quot;: 10,
+  &quot;total&quot;: 25
+}
+</code></pre></div></p>
+<hr />
+<h2 id="latihan"><strong>Latihan</strong></h2>
+<p>Kerjakan tugas berikut:</p>
+<ol>
+<li>Tambahkan minimal 5 produk baru ke database.</li>
+<li>Gunakan endpoint search untuk mencari produk tertentu.</li>
+<li>Gunakan endpoint filter category untuk menampilkan produk berdasarkan kategori.</li>
+<li>Gunakan pagination untuk melihat halaman kedua dari data produk.</li>
+</ol>
+<p>I think there is no need test this out.</p>
+<hr />
+<h2 id="diskusi"><strong>Diskusi</strong></h2>
+<p>Jawab pertanyaan berikut:</p>
+<h2 id="1-mengapa-pagination-penting-dalam-rest-api">1. Mengapa Pagination Penting dalam REST API?</h2>
+<p>Bayangkan jika sebuah aplikasi e-commerce memiliki 1.000.000 produk. Jika API mengirimkan <em>seluruh</em> data tersebut dalam satu kali <em>request</em>, aplikasi akan langsung melambat atau bahkan <em>crash</em>.</p>
+<p><strong>Pagination</strong> adalah teknik membagi sekumpulan data yang besar menjadi potongan-potongan kecil (per halaman) sebelum dikirim ke pengguna.</p>
+<h3 id="keuntungan-utama-pagination">Keuntungan Utama Pagination:</h3>
+<ul>
+<li><strong>Meningkatkan Performa (Speed):</strong> Server tidak perlu memproses jutaan baris data dari database sekaligus, sehingga waktu respons API menjadi jauh lebih cepat.</li>
+<li><strong>Menghemat Bandwidth:</strong> Ukuran file JSON yang dikirimkan menjadi jauh lebih kecil (misal: hanya mengirim 20 data per halaman, bukan 1.000.000 data).</li>
+<li><strong>Mengurangi Beban Server &amp; Database:</strong> Membatasi jumlah data yang diambil berarti mengurangi penggunaan RAM dan CPU pada server database kamu.</li>
+<li><strong>User Experience (UX) yang Lebih Baik:</strong> Aplikasi di sisi <em>client</em> (Mobile/Web) dapat memuat data secara bertahap (misalnya dengan tombol <em>"Next"</em> atau sistem <em>Infinite Scroll</em>).</li>
+</ul>
+<hr />
+<h2 id="2-apa-keuntungan-menggunakan-query-parameter-pada-api">2. Apa Keuntungan Menggunakan Query Parameter pada API?</h2>
+<p><strong>Query Parameter</strong> adalah pasangan kunci dan nilai (key-value) yang ditambahkan di akhir URL setelah tanda tanya (<code>?</code>). Contoh: <code>/api/products?page=2&amp;limit=10</code>.</p>
+<h3 id="keuntungan-menggunakannya">Keuntungan Menggunakannya:</h3>
+<ul>
+<li><strong>Fleksibilitas Tanpa Mengubah Endpoint:</strong> Kamu tidak perlu membuat banyak rute URL baru. Cukup gunakan satu URL dasar (<code>/api/products</code>), lalu gunakan parameter untuk mengubah hasil datanya.</li>
+<li><strong>Mudah Dibagikan (Bookmarkable &amp; Sharable):</strong> Karena semua instruksi ada di dalam URL, kamu bisa menyalin URL tersebut dan membagikannya ke orang lain. Orang tersebut akan melihat hasil yang <em>sama persis</em> (misal: hasil pencarian sepatu ukuran 42).</li>
+<li><strong>Standar untuk GET Request:</strong> Mengikuti prinsip RESTful API, operasi membaca data (<em>Read</em>) yang membutuhkan modifikasi tampilan sebaiknya ditaruh di URL, bukan di dalam <em>Request Body</em>.</li>
+<li><strong>Mudah di-Cache:</strong> Server atau CDN (Content Delivery Network) dapat dengan mudah menyimpan cache hasil respons berdasarkan URL yang spesifik tersebut untuk mempercepat akses berikutnya.</li>
+</ul>
+<hr />
+<h2 id="3-apa-perbedaan-search-dan-filtering-pada-api">3. Apa Perbedaan Search dan Filtering pada API?</h2>
+<p>Meskipun keduanya digunakan untuk mempersempit data yang tampil, tujuan dan cara kerjanya di balik layar sangat berbeda:</p>
+<table>
+<thead>
+<tr>
+<th>Fitur</th>
+<th><strong>Filtering (Penyaringan)</strong></th>
+<th><strong>Search (Pencarian)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definisi</strong></td>
+<td>Mengambil data berdasarkan kriteria atau kategori yang <strong>pasti dan spesifik</strong>.</td>
+<td>Mencari kecocokan data berdasarkan teks atau kata kunci yang <strong>fleksibel</strong>.</td>
+</tr>
+<tr>
+<td><strong>Karakteristik</strong></td>
+<td>Biasanya mencocokkan nilai yang sama persis (<em>exact match</em>).</td>
+<td>Biasanya mencari kemiripan teks (<em>partial match</em> atau <em>fuzzy search</em>).</td>
+</tr>
+<tr>
+<td><strong>Input Pengguna</strong></td>
+<td>Dipilih melalui komponen UI seperti <em>Dropdown, Checkbox,</em> atau <em>Radio Button</em>.</td>
+<td>Diketik secara manual oleh pengguna di dalam <em>Search Bar</em>.</td>
+</tr>
+<tr>
+<td><strong>Contoh Query</strong></td>
+<td><code>?category_id=1</code> atau <code>?status=active</code></td>
+<td><code>?q=sepatu+lari</code> atau <code>?search=meja</code></td>
+</tr>
+<tr>
+<td><strong>Logika SQL</strong></td>
+<td>Menggunakan operator <code>=</code> (Sama dengan). <br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br><code>WHERE category_id = 1</code> | Menggunakan operator <code>LIKE</code> dengan <em>wildcard</em>. <br></p>
+<p><br><code>WHERE name LIKE '%sepatu%'</code> |</p>
+<h3 id="contoh-kasus-di-aplikasi">Contoh Kasus di Aplikasi:</h3>
+<p>Jika kamu membuka aplikasi belanja online:</p>
+<ul>
+<li><strong>Search:</strong> Kamu mengetik kata <em>"Samsung"</em> di kolom pencarian. API akan mencari semua produk yang nama atau deskripsinya mengandung kata "Samsung".</li>
+<li><strong>Filtering:</strong> Setelah hasil pencarian muncul, kamu mencentang opsi <strong>Kondisi: Baru</strong> dan <strong>Rentang Harga: 2 Juta - 5 Juta</strong>. API akan menyaring hasil pencarian tadi agar hanya menampilkan barang baru di rentang harga tersebut.</li>
+</ul>
+<hr />
+<h2 id="kesimpulan"><strong>Kesimpulan</strong></h2>
+<p>Pada praktikum ini, mahasiswa telah mempelajari bagaimana membuat REST API yang lebih dinamis menggunakan <em>query parameter</em>. Dengan mengimplementasikan <em>filtering</em>, <em>search</em>, dan <em>pagination</em>, API dapat mengelola data dengan lebih efisien dan fleksibel. Teknik ini merupakan fondasi penting dalam pengembangan <em>backend</em> pada sistem <em>client-server</em> modern.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
