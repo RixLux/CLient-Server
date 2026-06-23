@@ -1,39 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas1/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas1/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas1/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas1/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas2/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas2/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas2/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas2/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas3/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas3/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas3/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas3/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas4/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas4/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas4/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas4/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas5/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas5/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas5/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas5/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas6/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas6/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas6/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas6/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/Tugas7/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/Tugas7/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas7/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas7/"/>
     </url>
     <url>
-         <loc>https://rixlux.github.io/CLient-Server/about/</loc>
-         <lastmod>2026-06-12</lastmod>
+        <loc>https://rixlux.github.io/CLient-Server/about/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/about/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/about/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas1/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas1/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas2/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas2/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas3/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas3/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas4/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas4/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas4/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas5/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas5/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas5/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas6/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas6/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas6/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/Tugas7/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/Tugas7/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/Tugas7/"/>
+    </url>
+    <url>
+        <loc>https://rixlux.github.io/CLient-Server/id/about/</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="id" href="https://rixlux.github.io/CLient-Server/id/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rixlux.github.io/CLient-Server/about/"/>
     </url>
 </urlset>
